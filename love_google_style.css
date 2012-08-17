@@ -1,0 +1,183 @@
+.lgs-input{
+	font-family: "微软雅黑", Arial, sans-serif;
+}
+/* Google 的搜索框样式 START*/
+.lgs-input .inputbox{
+	background-color: white;
+	/*
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-top: 1px solid rgba(0, 0, 0, 0.25);
+	*/
+	border: 1px solid #ccc;
+	height: 28px;
+}
+.lgs-input .inputbox:hover{
+	-moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px inset;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px inset;
+	-o-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px inset;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px inset;
+	border: 1px solid #4D90FE;
+}
+.lgs-input .inputbox input{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 0;
+	font-size: 13px;
+	height: 28px;
+	margin: 0;
+	outline: none;
+	padding: 5px;
+	width: 100%;
+	font-family: inherit;
+}
+
+/* Google 的搜索框样式 END*/
+
+/* Google 的按钮样式 START */
+/* 
+ * 灰色按钮样式，按钮样式基类，所有按钮的父样式 
+ * html : <div class="button">...</div>
+ */
+.lgs-input .button{
+	background: linear-gradient(top, whiteSmoke,#F1F1F1);
+	border: 1px solid gainsboro;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	color: #666;
+	cursor: pointer;
+	display: -moz-inline-box;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 11px;
+	font-weight: bold;
+	height: 27px;
+	line-height: 27px;
+	min-width: 54px;
+	padding: 0 8px;
+	text-align: center;
+	text-decoration: none;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-o-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	border-radius: 2px;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, whiteSmoke), color-stop(100%, #F1F1F1));
+	background: -webkit-linear-gradient(top, whiteSmoke,#F1F1F1);
+	background: -moz-linear-gradient(top, whiteSmoke,#F1F1F1);
+	background: -o-linear-gradient(top, whiteSmoke,#F1F1F1);
+	background: linear-gradient(top, whiteSmoke,#F1F1F1);
+	-moz-transition-property: all;
+	-webkit-transition-property: all;
+	-o-transition-property: all;
+	transition-property: all;
+	-moz-transition-duration: 0.218s;
+	-webkit-transition-duration: 0.218s;
+	-o-transition-duration: 0.218s;
+	transition-duration: 0.218s;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-ms-box-sizing: content-box;
+	box-sizing: content-box;
+}
+/*
+ * 灰色按钮焦点样式，所有按钮的焦点父样式 
+ */
+.lgs-input .button:hover{
+	background: linear-gradient(top, #F8F8F8,#F1F1F1);
+	border: 1px solid #C6C6C6;
+	color: #333;
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #F8F8F8), color-stop(100%, #F1F1F1));
+	background: -webkit-linear-gradient(top, #F8F8F8,#F1F1F1);
+	background: -moz-linear-gradient(top, #F8F8F8,#F1F1F1);
+	background: -o-linear-gradient(top, #F8F8F8,#F1F1F1);
+	background: linear-gradient(top, #F8F8F8,#F1F1F1);
+	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px 0;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px 0;
+	-o-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px 0;
+	box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px 0;
+	-moz-transition-property: all;
+	-webkit-transition-property: all;
+	-o-transition-property: all;
+	transition-property: all;
+	-moz-transition-duration: 0;
+	-webkit-transition-duration: 0;
+	-o-transition-duration: 0;
+	transition-duration: 0;
+}
+
+/* 
+ * 蓝色按钮常态样式，拓展自.button 按钮样式基类
+ * html : <div class="button button-blue">...</div>
+ */
+.lgs-input .button-blue
+{
+	background-color: #4D90FE !important;
+	border-color: #3079ED !important;
+	color: white !important;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4D90FE), color-stop(100%, #4787ED)) !important;
+	background-image: -webkit-linear-gradient(top, #4D90FE,#4787ED) !important;
+	background-image: -moz-linear-gradient(top, #4D90FE,#4787ED) !important;
+	background-image: -o-linear-gradient(top, #4D90FE,#4787ED) !important;
+	background-image: linear-gradient(top, #4D90FE,#4787ED) !important;
+}
+/* 
+ * 蓝色按钮焦点样式，拓展自.button 按钮焦点样式基类
+ */
+.lgs-input .button-blue:hover{
+	background-color: #357AE8 !important;
+	border-color: #2F5BB7 !important;
+	color: white !important;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4D90FE), color-stop(100%, #357AE8)) !important;
+	background-image: -webkit-linear-gradient(top, #4D90FE,#357AE8) !important;
+	background-image: -moz-linear-gradient(top, #4D90FE,#357AE8) !important;
+	background-image: -o-linear-gradient(top, #4D90FE,#357AE8) !important;
+	background-image: linear-gradient(top, #4D90FE,#357AE8) !important;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px 0;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px 0;
+	-o-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px 0;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px 0;
+}
+/* 
+ * 蓝色按钮常态样式，拓展自.button 按钮样式基类
+ * html : <div class="button button-red">...</div>
+ */
+.lgs-input .button-red {
+	background-color: #D14836 !important;
+	border-color: #992A1B !important;
+	color: white !important;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #DD4B39), color-stop(100%, #D14836)) !important;
+	background-image: -webkit-linear-gradient(top, #DD4B39,#D14836) !important;
+	background-image: -moz-linear-gradient(top, #DD4B39,#D14836) !important;
+	background-image: -o-linear-gradient(top, #DD4B39,#D14836) !important;
+	background-image: linear-gradient(top, #DD4B39,#D14836) !important;
+	text-shadow: rgba(0, 0, 0, 0.1) 0 1px 0;
+}
+/* 
+ * 红色按钮焦点样式，拓展自.button 按钮焦点样式基类
+ */
+.lgs-input .button-red:hover {
+	background-color: #C53727 !important;
+	border-color: #B0281A !important;
+	color: white !important;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #DD4B39), color-stop(100%, #C53727)) !important;
+	background-image: -webkit-linear-gradient(top, #DD4B39,#C53727) !important;
+	background-image: -moz-linear-gradient(top, #DD4B39,#C53727) !important;
+	background-image: -o-linear-gradient(top, #DD4B39,#C53727) !important;
+	background-image: linear-gradient(top, #DD4B39,#C53727) !important;
+	border-bottom: 1px solid #AF301F;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px 0;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px 0;
+	-o-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px 0;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px 0;
+}
+.lgs-input .button a,.lgs-input .button-blue a,.lgs-input .button-red a{
+	color:#666;
+	text-decoration: none;
+}
+.lgs-input .button-blue a,.lgs-input .button-red a{
+	color:white;
+}
+/* Google 的按钮样式 END*/
